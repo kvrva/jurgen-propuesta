@@ -4,6 +4,11 @@
 
 ---
 
+## 📝 Enfoque de Desarrollo
+El desarrollo se realizará con un **diseño visual (frontend) 100% personalizado y programado desde cero a la medida de su marca**, el cual estará conectado a un **motor administrativo (backend) basado en WordPress y WooCommerce**. Esto garantiza un diseño visual único y una lógica de cotización a medida, al mismo tiempo que provee un panel de administración autogestionable, seguro y estandarizado para el control del inventario y las cotizaciones.
+
+---
+
 ## 🔗 Enlace a la Demo Interactiva
 El prototipo funcional e interactivo de esta propuesta está publicado y listo para ser probado por el cliente en el siguiente enlace:
 👉 **[Previsualizar Demo de Propuesta en Vivo](https://kvrva.github.io/jurgen-propuesta/)**
@@ -57,15 +62,15 @@ Para asegurar el éxito del proyecto sin comprometer la calidad, el desarrollo a
 
 ## 💰 Propuesta Económica y Metodología de Pago
 
-La inversión total del proyecto es de **$1.400.000 CLP (Neto)**, facturado mediante Boleta de Honorarios de Terceros a través de Viewled Chile SpA.
+La inversión total del proyecto es de **$1.400.000 CLP + IVA (Valores Netos)**, facturado electrónicamente desde Viewled Chile SpA.
 
 La distribución de pagos se define bajo los siguientes hitos de avance:
 
-| Hito | Entregable | Porcentaje | Monto |
+| Hito | Entregable | Porcentaje | Monto (Neto) |
 | :--- | :--- | :---: | :---: |
-| **Anticipo de Inicio** | Firma de acuerdo y provisión de entornos de desarrollo. | 50% | **$700.000 CLP** |
-| **Entrega de Avance** | Catálogo e-commerce cargado y sistema de subida CAD conectado (Fin Semana 3). | 30% | **$420.000 CLP** |
-| **Cierre de Proyecto** | Certificación de pasarela de pago, capacitaciones y lanzamiento (Semana 5). | 20% | **$280.000 CLP** |
+| **Anticipo de Inicio** | Firma de acuerdo y provisión de entornos de desarrollo. | 40% | **$560.000 CLP + IVA** |
+| **Entrega de Avance** | Catálogo e-commerce cargado y sistema de subida CAD conectado (Fin Semana 3). | 40% | **$560.000 CLP + IVA** |
+| **Cierre de Proyecto** | Certificación de pasarela de pago, capacitaciones y lanzamiento (Semana 5). | 20% | **$280.000 CLP + IVA** |
 
 ---
 
