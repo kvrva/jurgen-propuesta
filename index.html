@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta Web Corporativa & E-Commerce - Jürgen Von Arnim SpA</title>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+
+<body>
+
+  <!-- GLOBAL NOTIFICATIONS CONTAINER -->
+  <div id="notificationContainer" class="notification-container"></div>
+
+  <!-- BRAND DECORATIVE BAR (German Flag colors from logo) -->
+  <div class="brand-accent-bar">
+    <div class="bar-black"></div>
+    <div class="bar-red"></div>
+    <div class="bar-gold"></div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#propuesta" class="logo-container">
+        <!-- SVG Vector Drawing of Corporate Logo -->
+        <div class="logo-icon-svg">
+          <svg width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" fill="#003b6f" stroke="#ffffff" stroke-width="2" />
+            <circle cx="50" cy="50" r="44" fill="none" stroke="#ffffff" stroke-width="1" />
+            <!-- Mountain/Arch icon -->
+            <path d="M35 30 L50 20 L65 30 Q50 25 35 30 Z" fill="#ffffff" />
+            <path d="M38 31 L50 26 L62 31 Q50 29 38 31 Z" fill="#ffffff" />
+            <!-- Text JÜRGEN VON ARNIM -->
+            <text x="50" y="46" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#ffffff"
+              text-anchor="middle">JÜRGEN</text>
+            <text x="50" y="56" font-family="'Outfit', sans-serif" font-weight="600" font-size="8" fill="#ffffff"
+              text-anchor="middle" letter-spacing="0.5">VON ARNIM</text>
+            <!-- Stripes at the bottom -->
+            <rect x="15" y="63" width="70" height="5" fill="#000000" />
+            <rect x="17" y="69" width="66" height="5" fill="#de2128" />
+            <rect x="22" y="75" width="56" height="5" fill="#ffcd00" />
+            <!-- SPA Text overlaid -->
+            <text x="50" y="80" font-family="'Outfit', sans-serif" font-weight="800" font-size="10" fill="#ffffff"
+              text-anchor="middle">SPA</text>
+          </svg>
+        </div>
+
+        <div class="logo-text">
+          <span class="logo-main">JÜRGEN</span>
+          <span class="logo-sub">Von Arnim SpA</span>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#propuesta" class="nav-link active">Propuesta</a>
+        <a href="#demo-web" class="nav-link">Demo Sitio Web</a>
+        <a href="#admin-panel" class="nav-link">Panel Admin</a>
+        <a href="#portafolio" class="nav-link">Mi Portafolio</a>
+        <a href="#roadmap" class="nav-link">Hoja de Ruta</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary" onclick="toggleCartDrawer()"
+          style="position: relative; display: flex; gap: 8px;">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Carro</span>
+          <span id="cartCountBadge"
+            style="position: absolute; top: -8px; right: -8px; background: var(--color-primary); color: #000; font-size: 11px; font-weight: 800; width: 18px; height: 18px; border-radius: 50%; display: none; align-items: center; justify-content: center;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER -->
+  <main class="container section-padding" style="flex-grow: 1;">
+
+    <!-- ==================== SECTION 1: PROPOSAL ==================== -->
+    <section id="section-propuesta" class="tab-content active">
+      <div class="section-header">
+        <span class="section-subtitle">PROPUESTA TÉCNICA & ECONÓMICA</span>
+        <h1 class="section-title">Desarrollo Web Corporativo e-Commerce</h1>
+        <p>Una solución robusta construida con WordPress + WooCommerce para garantizar autoadministración simple, alta
+          velocidad y confidencialidad.</p>
+      </div>
+
+      <div class="hero-grid" style="margin-bottom: 80px;">
+        <div>
+          <div class="hero-tag">Tecnologías de Vanguardia</div>
+          <h2 style="font-size: 28px; margin-bottom: 16px;">Infraestructura Ligera y Segura</h2>
+          <p style="margin-bottom: 24px;">La propuesta se basa en un núcleo escalable y autoadministrable de WordPress
+            con el plugin de e-commerce más utilizado a nivel mundial, optimizado mediante las siguientes capas:</p>
+
+          <div class="card-grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="glass-card" style="padding: 20px;">
+              <div class="card-icon"
+                style="width: 36px; height: 36px; font-size: 16px; margin-bottom: 12px; color: var(--color-primary);"><i
+                  class="fab fa-wordpress"></i></div>
+              <h4 style="font-size: 14px; margin-bottom: 6px;">WordPress + Woo</h4>
+              <p style="font-size: 12px;">Gestión autónoma de stock, catalogación e importación de repuestos.</p>
+            </div>
+            <div class="glass-card" style="padding: 20px;">
+              <div class="card-icon"
+                style="width: 36px; height: 36px; font-size: 16px; margin-bottom: 12px; color: var(--color-primary);"><i
+                  class="fas fa-shield-halved"></i></div>
+              <h4 style="font-size: 14px; margin-bottom: 6px;">Wordfence & SSL</h4>
+              <p style="font-size: 12px;">Seguridad activa contra ataques informáticos y cifrado SSL HTTPS.</p>
+            </div>
+            <div class="glass-card" style="padding: 20px;">
+              <div class="card-icon"
+                style="width: 36px; height: 36px; font-size: 16px; margin-bottom: 12px; color: var(--color-primary);"><i
+                  class="fas fa-bolt"></i></div>
+              <h4 style="font-size: 14px; margin-bottom: 6px;">Optimización CDN</h4>
+              <p style="font-size: 12px;">Cloudflare + LiteSpeed Cache para carga instantánea en móviles.</p>
+            </div>
+            <div class="glass-card" style="padding: 20px;">
+              <div class="card-icon"
+                style="width: 36px; height: 36px; font-size: 16px; margin-bottom: 12px; color: var(--color-primary);"><i
+                  class="fas fa-wallet"></i></div>
+              <h4 style="font-size: 14px; margin-bottom: 6px;">Pasarela Webpay</h4>
+              <p style="font-size: 12px;">Conexión directa con Webpay Plus, Mercado Pago o Flow.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="tech-grid-bg"></div>
+          <div class="spec-card">
+            <div class="spec-card-header">
+              <span class="spec-title">Ficha Técnica del Proyecto</span>
+              <div class="spec-badge"></div>
+            </div>
+            <div class="spec-body">
+              <div class="spec-line"><span class="label">Cliente:</span><span class="val">Jürgen Von Arnim SpA</span>
+              </div>
+              <div class="spec-line"><span class="label">Proveedor:</span><span class="val"
+                  style="color:var(--color-primary); font-weight:700;">KVRVA Software Studio</span></div>
+              <div class="spec-line"><span class="label">Razón Social:</span><span class="val">Viewled Chile SpA</span>
+              </div>
+              <div class="spec-line"><span class="label">Plazo:</span><span class="val">6 Semanas (1.5 Meses)</span></div>
+              <div class="spec-line"><span class="label">Desarrollo:</span><span class="val">100% Personalizado</span>
+              </div>
+              <div class="spec-line"><span class="label">Base de Datos:</span><span class="val">MariaDB / MySQL</span>
+              </div>
+              <div class="spec-line"><span class="label">Maquetación:</span><span class="val">Responsive / Mobile
+                  First</span></div>
+              <div class="spec-line"><span class="label">Soporte gratis:</span><span class="val">30 Días Garantía</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CRONOGRAMA DE TRABAJO -->
+      <h2 style="font-size: 24px; margin-bottom: 12px; text-align: center;">Cronograma y Fases de Ejecución</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 30px auto; font-size: 14px;">El proyecto se divide
+        en 4 etapas bien definidas a lo largo de 6 semanas (1.5 meses):</p>
+
+      <div class="timeline-container">
+        <div class="timeline-header-weeks">
+          <div>Etapa / Entregable</div>
+          <div style="text-align: center;">Semanas 1-2</div>
+          <div style="text-align: center;">Semana 3</div>
+          <div style="text-align: center;">Semanas 4-5</div>
+          <div style="text-align: center;">Semana 6</div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-task-info">
+            <span class="timeline-task-name">1. Arquitectura & Diseño</span>
+            <span class="timeline-task-sub">Wireframes, servidor, dominio</span>
+          </div>
+          <div class="timeline-bar-cell">
+            <div class="timeline-bar color-w1 active">Diseño interfaces</div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-task-info">
+            <span class="timeline-task-name">2. Secciones de Ingeniería</span>
+            <span class="timeline-task-sub">Servicios Mecánicos y Eléctricos</span>
+          </div>
+          <div></div>
+          <div class="timeline-bar-cell">
+            <div class="timeline-bar color-w2 active">Maquetación Web</div>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-task-info">
+            <span class="timeline-task-name">3. Catálogo & Pasarela</span>
+            <span class="timeline-task-sub">Tienda online y medios de pago</span>
+          </div>
+          <div></div>
+          <div></div>
+          <div class="timeline-bar-cell">
+            <div class="timeline-bar color-w3 active">WooCommerce</div>
+          </div>
+          <div></div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-task-info">
+            <span class="timeline-task-name">4. Optimización, SEO & Entrega</span>
+            <span class="timeline-task-sub">Seguridad, respaldos, capacitación</span>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="timeline-bar-cell">
+            <div class="timeline-bar color-w4 active">Capacitación/Cierre</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRESUPUESTO & PAGOS -->
+      <div class="budget-grid">
+        <div class="budget-details">
+          <h3
+            style="font-size: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px;">
+            Propuesta Económica</h3>
+
+          <div class="price-box">
+            <span class="price-label">Inversión Total del Proyecto</span>
+            <span class="price-value">$1.400.000 CLP</span>
+            <span class="price-sub">Valor Neto (Facturado mediante Boleta de Honorarios de Terceros)</span>
+          </div>
+
+          <div class="payment-hitos">
+            <div class="hito-item">
+              <div class="hito-meta">
+                <span class="hito-title">Anticipo de Inicio</span>
+                <span class="hito-percent">50% al firmar acuerdo</span>
+              </div>
+              <span class="hito-value">$700.000 CLP</span>
+            </div>
+
+            <div class="hito-item">
+              <div class="hito-meta">
+                <span class="hito-title">Entrega de Avance</span>
+                <span class="hito-percent">30% al terminar Semana 3</span>
+              </div>
+              <span class="hito-value">$420.000 CLP</span>
+            </div>
+
+            <div class="hito-item">
+              <div class="hito-meta">
+                <span class="hito-title">Cierre de Proyecto</span>
+                <span class="hito-percent">20% contra entrega final</span>
+              </div>
+              <span class="hito-value">$280.000 CLP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-conditions">
+          <h3 style="font-size: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px;">Soporte y
+            Garantías</h3>
+
+          <div class="condition-row">
+            <div class="condition-icon"><i class="fas fa-shield-heart"></i></div>
+            <div class="condition-text">
+              <h4>Garantía de Estabilidad (30 Días)</h4>
+              <p>Soporte gratuito para corrección de bugs, errores de código o caídas del servidor tras el despliegue
+                oficial.</p>
+            </div>
+          </div>
+
+          <div class="condition-row">
+            <div class="condition-icon"><i class="fas fa-clock"></i></div>
+            <div class="condition-text">
+              <h4>Bolsa de Horas Adicionales</h4>
+              <p>Valor por hora de desarrollo para modificaciones fuera de la propuesta original: <strong>$25.000
+                  CLP/Hora</strong>.</p>
+            </div>
+          </div>
+
+          <div class="condition-row">
+            <div class="condition-icon"><i class="fas fa-cog"></i></div>
+            <div class="condition-text">
+              <h4>Mantenimiento Mensual (Opcional)</h4>
+              <p>Plan integral por <strong>$60.000 CLP/Mes</strong>. Incluye respaldos en nube externa, actualizaciones
+                de plugins y 1 hora de soporte incluida para cambios rápidos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: DEMO SITE ==================== -->
+    <section id="section-demo-web" class="tab-content">
+      <div class="section-header">
+        <span class="section-subtitle">DEMO EN VIVO</span>
+        <h1 class="section-title">Concepto de Sitio Web Jürgen</h1>
+        <p>Previsualiza cómo operarán las secciones corporativas, el carro de compras con desglose de IVA y el sistema
+          de cotizaciones del cliente final.</p>
+      </div>
+
+      <!-- Navigation for demo subsections -->
+      <div class="eng-tabs" style="justify-content: center; margin-bottom: 40px;">
+        <button class="eng-tab-btn active" data-tab="corp" onclick="toggleEngineeringTab('corp')">
+          <i class="fas fa-building"></i> 1. Vista Corporativa
+        </button>
+        <button class="eng-tab-btn" data-tab="shop" onclick="toggleEngineeringTab('shop')">
+          <i class="fas fa-shopping-cart"></i> 2. Vista E-Commerce
+        </button>
+        <button class="eng-tab-btn" data-tab="quotes" onclick="toggleEngineeringTab('quotes')">
+          <i class="fas fa-file-invoice"></i> 3. Vista Cotizador
+        </button>
+      </div>
+
+      <!-- DEMO CORP SUBSECTION -->
+      <div id="eng-tab-corp" class="eng-tab-content active">
+        <div class="engineering-showcase">
+          <h2
+            style="font-size: 24px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px;">
+            Divisiones de Ingeniería</h2>
+
+          <div class="card-grid">
+            <div class="glass-card">
+              <div class="card-icon" style="color:var(--color-primary);"><i class="fas fa-cogs"></i></div>
+              <h3 class="card-title">Ingeniería Mecánica</h3>
+              <p class="card-desc">Cálculo de recipientes a presión, diseño de cintas transportadoras, análisis por
+                elementos finitos (FEA) y optimización de fatiga de materiales.</p>
+            </div>
+
+            <div class="glass-card">
+              <div class="card-icon" style="color:var(--color-secondary);"><i class="fas fa-charging-station"></i></div>
+              <h3 class="card-title">Ingeniería Eléctrica</h3>
+              <p class="card-desc">Diseño de tableros de control y fuerza, canalizaciones industriales, cálculo de
+                mallas a tierra e integración de protecciones eléctricas avanzadas.</p>
+            </div>
+
+            <div class="glass-card">
+              <div class="card-icon" style="color:var(--color-accent);"><i class="fas fa-helmet-safety"></i></div>
+              <h3 class="card-title">Ingeniería Civil / Estructural</h3>
+              <p class="card-desc">Cálculo y diseño estructural de fundaciones de hormigón para maquinaria industrial y
+                montaje estructural en perfiles de acero pesado.</p>
+            </div>
+          </div>
+
+          <div class="hero-grid"
+            style="margin-top: 40px; background:var(--bg-surface-elevated); padding:30px; border-radius:var(--border-radius-md); border:1px solid var(--border-color);">
+            <div>
+              <h3 style="font-size: 20px; margin-bottom: 12px;">Precisión Técnica e Industrial</h3>
+              <p style="font-size: 14px; margin-bottom: 20px;">Nuestro portafolio de servicios se integra directamente
+                con el cotizador inteligente, facilitando la interacción con jefes de proyectos y supervisores técnicos.
+              </p>
+              <a href="#section-demo-web" class="btn btn-primary" onclick="toggleEngineeringTab('quotes')">
+                <i class="fas fa-file-signature"></i> Cotizar Servicio
+              </a>
+            </div>
+            <div class="eng-visual-mock">
+              <div class="blueprint-grid"></div>
+              <div class="blueprint-content">
+                <i class="fas fa-drafting-compass blueprint-icon"></i>
+                <h4 style="font-size: 14px; margin-bottom: 4px;">TOLVA_CAD_3D.dwg</h4>
+                <p style="font-size: 11px; color: var(--text-muted);">Simulación de carga estática aprobada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEMO SHOP SUBSECTION -->
+      <div id="eng-tab-shop" class="eng-tab-content">
+        <div class="shop-layout">
+
+          <!-- Category Filter Sidebar -->
+          <aside class="shop-sidebar">
+            <h3 class="sidebar-title">Filtros de Catálogo</h3>
+
+            <div class="filter-group">
+              <span class="form-label" style="font-size:12px; text-transform:uppercase;">Especialidad</span>
+              <label class="filter-label">
+                <input type="radio" name="category" value="Todos" checked onclick="filterCatalogCategory('Todos')">
+                <span>Todos los repuestos</span>
+              </label>
+              <label class="filter-label">
+                <input type="radio" name="category" value="Mecanica" onclick="filterCatalogCategory('Mecanica')">
+                <span>Mecánica</span>
+              </label>
+              <label class="filter-label">
+                <input type="radio" name="category" value="Electrica" onclick="filterCatalogCategory('Electrica')">
+                <span>Eléctrica</span>
+              </label>
+              <label class="filter-label">
+                <input type="radio" name="category" value="Civil" onclick="filterCatalogCategory('Civil')">
+                <span>Civil / Estructural</span>
+              </label>
+              <label class="filter-label">
+                <input type="radio" name="category" value="Servicios" onclick="filterCatalogCategory('Servicios')">
+                <span>Servicios de Ingeniería</span>
+              </label>
+            </div>
+
+            <div
+              style="background:var(--bg-surface-elevated); padding:16px; border-radius:6px; border:1px solid var(--border-color); font-size:12px;">
+              <h5 style="color:var(--color-primary); margin-bottom:6px;"><i class="fas fa-calculator"></i> Nota
+                impositiva (Chile)</h5>
+              <p style="color:var(--text-secondary); line-height:1.4;">Los repuestos físicos calculan un **19% de IVA**.
+                Los servicios de consultoría técnica y firmas de memorias están exentos de IVA.</p>
+            </div>
+          </aside>
+
+          <!-- Main Shop View -->
+          <div class="shop-main">
+            <div class="shop-bar">
+              <span style="font-size:14px; font-weight:600; color:var(--text-muted);">Listando Productos</span>
+              <div class="search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="catalogSearch" class="search-input"
+                  placeholder="Buscar repuestos por SKU o nombre...">
+              </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="shopGrid" class="shop-grid"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DEMO QUOTES SUBSECTION -->
+      <div id="eng-tab-quotes" class="eng-tab-content">
+        <div class="quote-layout">
+
+          <!-- Quote Form -->
+          <div class="quote-card">
+            <h3
+              style="font-size: 20px; margin-bottom: 24px; border-bottom:1px solid var(--border-color); padding-bottom:12px;">
+              <i class="fas fa-file-invoice"></i> Formulario de Cotización Técnica
+            </h3>
+
+            <form id="quoteForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="clientName">Nombre / Razón Social *</label>
+                  <input type="text" id="clientName" class="form-input" placeholder="Ej: Minera Escondida Ltda."
+                    required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="clientEmail">Email de Contacto *</label>
+                  <input type="email" id="clientEmail" class="form-input" placeholder="Ej: adquisiciones@minera.cl"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="clientPhone">Teléfono de Contacto</label>
+                  <input type="text" id="clientPhone" class="form-input" placeholder="Ej: +56 9 1234 5678">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="projectType">Especialidad de Ingeniería *</label>
+                  <select id="projectType" class="form-input" style="height: 48px;" required>
+                    <option value="" disabled selected>Seleccione Especialidad</option>
+                    <option value="Mecanica">Ingeniería Mecánica</option>
+                    <option value="Electrica">Ingeniería Eléctrica</option>
+                    <option value="Civil">Ingeniería Civil / Estructural</option>
+                    <option value="Otro">Otro requerimiento especial</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="projectDesc">Descripción detallada del Proyecto / Alcance *</label>
+                <textarea id="projectDesc" class="form-input" style="min-height: 120px; resize: vertical;"
+                  placeholder="Detalla los requerimientos técnicos, especificaciones y plazos requeridos..."
+                  required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Adjuntar Planos CAD o Especificaciones Técnicas (PDF / DWG)</label>
+                <div id="dropzone" class="dropzone">
+                  <i class="fas fa-cloud-upload-alt dropzone-icon"></i>
+                  <div class="dropzone-text">
+                    <h5>Arrastra tus planos aquí o haz clic para buscar</h5>
+                    <p>Formatos permitidos: DWG, DXF, PDF, ZIP, SLDPRT. Tamaño máximo: 50MB.</p>
+                  </div>
+                  <input type="file" id="fileInput" multiple style="display: none;">
+                </div>
+
+                <div id="filesList" class="uploaded-files-list" style="display: none;"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+                <i class="fas fa-paper-plane"></i> Enviar Solicitud de Cotización
+              </button>
+            </form>
+          </div>
+
+          <!-- Technical Instructions / Info -->
+          <div class="quote-instructions">
+            <h3 style="font-size: 18px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+              Procesamiento de Archivos Pesados</h3>
+
+            <div class="condition-row">
+              <div class="condition-icon" style="color:var(--color-primary);"><i class="fas fa-microchip"></i></div>
+              <div class="condition-text">
+                <h4>Servidor Optimizado para Carga Pesada</h4>
+                <p>El portal estará integrado con un script PHP optimizado (`upload.php`) que maneja cargas por partes
+                  (chunks), evitando caídas de tiempo de espera (`timeout`) al subir archivos CAD grandes.</p>
+              </div>
+            </div>
+
+            <div class="condition-row">
+              <div class="condition-icon" style="color:var(--color-primary);"><i class="fas fa-folder-tree"></i></div>
+              <div class="condition-text">
+                <h4>Resguardo Automático en Google Drive</h4>
+                <p>Las cotizaciones y sus archivos planos DWG adjuntos se respaldan de manera inmediata en una
+                  estructura de carpetas privada de Google Drive mediante la API de Google, protegiendo la
+                  confidencialidad.</p>
+              </div>
+            </div>
+
+            <div
+              style="background:rgba(11, 76, 140, 0.08); padding:20px; border-radius:8px; border:1px solid rgba(11, 76, 140, 0.25); font-size:12px; margin-top:20px;">
+              <h5 style="color:#82b1ff; margin-bottom:6px;"><i class="fas fa-info-circle"></i> Flujo del Prototipo</h5>
+              <p style="color:var(--text-secondary); line-height:1.4;">Al enviar esta cotización, se insertará en tiempo
+                real en el **Panel de Administración**. Ve a la pestaña de arriba "Panel Admin" y simula el rol de
+                **Ingeniero** para verla e inspeccionar los planos adjuntos.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: ADMIN PANEL ==================== -->
+    <section id="section-admin-panel" class="tab-content">
+      <div class="section-header">
+        <span class="section-subtitle">ACCESO Y CONTROL</span>
+        <h1 class="section-title">Simulador de Roles de Negocio</h1>
+        <p>Prueba cómo funciona el control de accesos. Los ingenieros de proyectos de Jürgen SpA tienen vistas distintas
+          al encargado de bodega y repuestos.</p>
+      </div>
+
+      <!-- Simulation Role Switcher Bar -->
+      <div class="admin-roles-bar">
+        <div class="admin-roles-info">
+          <div class="role-pulse-indicator"></div>
+          <div>
+            <h4 style="font-size: 14px;">Simulación de Rol Activo:</h4>
+            <p style="font-size: 12px; color: var(--text-muted);">Haz clic en los botones de la derecha para simular
+              otro rol de seguridad.</p>
+          </div>
+        </div>
+
+        <div class="admin-roles-selector">
+          <button class="role-btn active" data-role="admin" onclick="setRole('admin')">Administrador</button>
+          <button class="role-btn" data-role="gestor" onclick="setRole('gestor')">Gestor Repuestos</button>
+          <button class="role-btn" data-role="ingeniero" onclick="setRole('ingeniero')">Ingeniero Proyectos</button>
+        </div>
+      </div>
+
+      <!-- Dynamic View Container (rendered by admin.js) -->
+      <div id="adminViewContent"></div>
+    </section>
+
+    <!-- ==================== SECTION 4: PORTFOLIO ==================== -->
+    <section id="section-portafolio" class="tab-content">
+      <div class="section-header">
+        <span class="section-subtitle">PERFIL DEL PROVEEDOR</span>
+        <h1 class="section-title">Capacidades Técnicas & Experiencia</h1>
+        <p>Detalle de tecnologías dominadas, referencias comprobables y capacidades de nuestro equipo para el proyecto
+          de
+          Jürgen Von Arnim SpA.</p>
+      </div>
+
+      <div class="portfolio-layout">
+        <!-- Sidebar profile card -->
+        <div class="profile-card">
+          <div class="profile-avatar" style="background: #ffffff; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 12px;">
+            <img src="img/kvrva_logo.png" alt="KVRVA Logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <h3 class="profile-name" style="margin-bottom: 2px;">KVRVA</h3>
+          <p class="profile-title" style="margin-bottom: 8px;">Software Studio</p>
+          <p style="font-size: 10px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.3;">Operado
+            legalmente por<br>Viewled Chile SpA · RUT 78.353.432-0</p>
+
+          <p style="font-size: 13px; margin-bottom: 24px; text-align: left; line-height: 1.5;">KVRVA es el estudio de
+            desarrollo de software de Viewled Chile SpA, orientado a la creación de plataformas web, comercio
+            electrónico, soluciones SaaS e integraciones tecnológicas para empresas.</p>
+
+          <div
+            style="text-align: left; font-size:12px; border-top:1px solid var(--border-color); padding-top:20px; margin-bottom: 20px;">
+            <h5
+              style="color: var(--color-primary); font-size: 11px; margin-bottom: 12px; text-transform: uppercase; letter-spacing:0.05em;">
+              Responsable Técnico</h5>
+            <div style="font-weight: 700; font-size:14px; margin-bottom: 4px; color:#fff;">Julián Martínez</div>
+            <div style="color: var(--text-muted); font-size: 11px; margin-bottom: 16px; line-height: 1.4;">
+              Software Engineer<br>
+              Representante Legal – Viewled Chile SpA<br>
+              Director de KVRVA Software Studio
+            </div>
+
+            <div
+              style="display:flex; flex-direction:column; gap:8px; border-top: 1px dashed var(--border-color); padding-top:16px;">
+              <div><i class="fas fa-envelope" style="color:var(--color-primary); width:20px;"></i>
+                julian.m@viewled.com.ar</div>
+              <div><i class="fas fa-phone" style="color:var(--color-primary); width:20px;"></i> +56 9 3087 6984</div>
+              <div><i class="fas fa-globe" style="color:var(--color-primary); width:20px;"></i> kvrva.com</div>
+              <div><i class="fas fa-map-marker-alt" style="color:var(--color-primary); width:20px;"></i> Santiago, Chile
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Details Info blocks -->
+        <div class="portfolio-info">
+
+          <!-- Stack block -->
+          <div class="info-block">
+            <h4 class="info-block-title"><i class="fas fa-layer-group"></i> Tecnologías Dominadas</h4>
+            <p style="font-size: 14px; margin-bottom: 16px;">Stack de herramientas modernas enfocadas en rendimiento
+              óptimo, SEO y seguridad activa:</p>
+            <div class="tech-badges-grid">
+              <div class="tech-badge"><i class="fab fa-wordpress"></i> WordPress Core</div>
+              <div class="tech-badge"><i class="fab fa-wordpress"></i> WooCommerce Customization</div>
+              <div class="tech-badge"><i class="fas fa-code"></i> HTML5 / CSS3 / JS Vainilla</div>
+              <div class="tech-badge"><i class="fab fa-php"></i> PHP Avanzado / MySQL</div>
+              <div class="tech-badge"><i class="fab fa-react"></i> React / Vite / Node.js</div>
+              <div class="tech-badge"><i class="fab fa-docker"></i> Docker / LocalWP</div>
+              <div class="tech-badge"><i class="fas fa-cloud-arrow-down"></i> Cloudflare CDN / Seguridad</div>
+              <div class="tech-badge"><i class="fas fa-robot"></i> Integración Google & Stripe APIs</div>
+            </div>
+          </div>
+
+          <!-- History projects block -->
+          <div class="info-block">
+            <h4 class="info-block-title"><i class="fas fa-folder-open"></i> Experiencia en proyectos similares</h4>
+            <div class="projects-history">
+              <div class="project-item">
+                <div class="project-meta">
+                  <h5>Veerlow - Plataforma Corporativa y Landing de Retail</h5>
+                  <p>Vite + React + Tailwind CSS | Diseño responsive de alta fidelidad, animaciones fluidas y carga
+                    optimizada.</p>
+                </div>
+                <span class="status-badge status-approved">Activo</span>
+              </div>
+              <div class="project-item">
+                <div class="project-meta">
+                  <h5>Portal de Iluminación LED & Proyectos (Viewled.com.ar)</h5>
+                  <p>Wix Engine + CSS Personalizado | Catálogo interactivo de luminarias y galería de proyectos
+                    corporativos.</p>
+                </div>
+                <span class="status-badge status-approved">Activo</span>
+              </div>
+              <div class="project-item">
+                <div class="project-meta">
+                  <h5>TryOn Sneakers - Probador Virtual de Calzado 3D</h5>
+                  <p>React + Three.js / WebGL | Aplicación interactiva para previsualización tridimensional y realidad
+                    aumentada de calzado.</p>
+                </div>
+                <span class="status-badge status-review">Demo</span>
+              </div>
+              <div class="project-item">
+                <div class="project-meta">
+                  <h5>Bot de Automatización de Trámites y Scraper Industrial</h5>
+                  <p>Node.js + Puppeteer | Robótica de procesos de software (RPA) para tramitación automática en
+                    portales gubernamentales.</p>
+                </div>
+                <span class="status-badge status-review">Demo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- References block -->
+          <div class="info-block">
+            <h4 class="info-block-title"><i class="fas fa-quote-left"></i> Referencias Comerciales de Clientes</h4>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div
+                style="background:var(--bg-surface-elevated); padding:16px; border-radius:8px; border:1px solid var(--border-color); font-size:12px;">
+                <p style="font-style: italic; margin-bottom: 12px;">"Excelente profesionalismo. Viewled Chile es muy
+                  ordenado en los plazos y su documentación técnica es impecable. El sistema de cotización nos ahorró un
+                  30% del trabajo manual de adquisiciones."</p>
+                <div style="font-weight: 700; color: var(--color-primary);">Ing. Claudio Lagos</div>
+                <div style="color: var(--text-muted); font-size: 11px;">Jefe de Operaciones, Metalúrgica Industrial SpA
+                </div>
+              </div>
+
+              <div
+                style="background:var(--bg-surface-elevated); padding:16px; border-radius:8px; border:1px solid var(--border-color); font-size:12px;">
+                <p style="font-style: italic; margin-bottom: 12px;">"Desarrollaron nuestra tienda de repuestos
+                  eléctricos en tiempo récord. El módulo de IVA diferenciado funciona perfectamente según la normativa
+                  chilena del SII."</p>
+                <div style="font-weight: 700; color: var(--color-primary);">Sofía Valdivia</div>
+                <div style="color: var(--text-muted); font-size: 11px;">Gerente Comercial, Distribuidores Eléctricos del
+                  Sur</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: ROADMAP ==================== -->
+    <section id="section-roadmap" class="tab-content">
+      <div class="section-header">
+        <span class="section-subtitle">PLAN DE IMPLEMENTACIÓN</span>
+        <h1 class="section-title">Hoja de Ruta hacia Producción</h1>
+        <p>Cronograma detallado y entregables por fase para transformar esta propuesta interactiva en un portal web 100% operativo.</p>
+      </div>
+
+      <div class="roadmap-container" style="max-width: 1000px; margin: 0 auto; padding: 20px 0;">
+        <div class="roadmap-timeline" style="position: relative; padding: 20px 0; display: flex; flex-direction: column; gap: 30px;">
+          
+          <!-- Phase 1 -->
+          <div class="roadmap-phase" style="display: flex; gap: 30px; position: relative;">
+            <div class="phase-number-box" style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: rgba(255, 205, 0, 0.1); border: 2px solid var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 800; color: var(--color-primary); z-index: 10;">01</div>
+            <div class="phase-card glass-card" style="flex-grow: 1; padding: 24px; position: relative; overflow: hidden; background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: 12px; text-align: left;">
+              <span class="phase-duration" style="float: right; font-size: 11px; background: rgba(11, 76, 140, 0.15); color: #82b1ff; padding: 4px 10px; border-radius: 20px; font-weight: 600; text-transform: uppercase;">Semanas 1-2</span>
+              <h3 style="font-size: 18px; margin-bottom: 12px; color: #fff; font-family: var(--font-title);"><i class="fas fa-server" style="color:var(--color-primary); margin-right: 8px;"></i> Fase 1: Infraestructura & Base CMS</h3>
+              <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
+                Configuración del entorno definitivo de hosting en servidor virtual optimizado (VPS) y levantamiento del sistema base.
+              </p>
+              <h5 style="color: var(--color-primary); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Tareas Principales:</h5>
+              <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 12px; color: var(--text-secondary);">
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Provisión de Servidor VPS (Vultr / DigitalOcean)</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Instalación de Nginx/LiteSpeed y MariaDB</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Levantamiento de WordPress Core</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Maquetación inicial de Estilos y Responsive</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="roadmap-phase" style="display: flex; gap: 30px; position: relative;">
+            <div class="phase-number-box" style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: rgba(255, 205, 0, 0.1); border: 2px solid var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 800; color: var(--color-primary); z-index: 10;">02</div>
+            <div class="phase-card glass-card" style="flex-grow: 1; padding: 24px; position: relative; overflow: hidden; background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: 12px; text-align: left;">
+              <span class="phase-duration" style="float: right; font-size: 11px; background: rgba(11, 76, 140, 0.15); color: #82b1ff; padding: 4px 10px; border-radius: 20px; font-weight: 600; text-transform: uppercase;">Semana 3</span>
+              <h3 style="font-size: 18px; margin-bottom: 12px; color: #fff; font-family: var(--font-title);"><i class="fas fa-store" style="color:var(--color-primary); margin-right: 8px;"></i> Fase 2: Catálogo & Pasarela de Pagos (E-Commerce)</h3>
+              <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
+                Implementación de WooCommerce, carga y clasificación del inventario de repuestos y vinculación de pagos reales.
+              </p>
+              <h5 style="color: var(--color-primary); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Tareas Principales:</h5>
+              <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 12px; color: var(--text-secondary);">
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Configuración e-commerce y reglas de IVA (19%/Exento)</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Integración de Pasarela Transbank Webpay Plus o Flow</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Importación de repuestos y control de stock inicial</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Automatización de correos de confirmación de compra</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="roadmap-phase" style="display: flex; gap: 30px; position: relative;">
+            <div class="phase-number-box" style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: rgba(255, 205, 0, 0.1); border: 2px solid var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 800; color: var(--color-primary); z-index: 10;">03</div>
+            <div class="phase-card glass-card" style="flex-grow: 1; padding: 24px; position: relative; overflow: hidden; background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: 12px; text-align: left;">
+              <span class="phase-duration" style="float: right; font-size: 11px; background: rgba(11, 76, 140, 0.15); color: #82b1ff; padding: 4px 10px; border-radius: 20px; font-weight: 600; text-transform: uppercase;">Semanas 4-5</span>
+              <h3 style="font-size: 18px; margin-bottom: 12px; color: #fff; font-family: var(--font-title);"><i class="fas fa-file-pdf" style="color:var(--color-primary); margin-right: 8px;"></i> Fase 3: Portal de Cotizaciones & Integración Drive API</h3>
+              <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
+                Desarrollo del backend para procesamiento de archivos pesados y sincronización automática de planos en la nube corporativa.
+              </p>
+              <h5 style="color: var(--color-primary); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Tareas Principales:</h5>
+              <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 12px; color: var(--text-secondary);">
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Subida segmentada de archivos CAD/PDF en PHP (Chunks)</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Configuración de Credenciales de API de Google Drive</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Script de subida automática Drive y orden de carpetas</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Alertas por correo SMTP al equipo de Jürgen Von Arnim</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="roadmap-phase" style="display: flex; gap: 30px; position: relative;">
+            <div class="phase-number-box" style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: rgba(255, 205, 0, 0.1); border: 2px solid var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 800; color: var(--color-primary); z-index: 10;">04</div>
+            <div class="phase-card glass-card" style="flex-grow: 1; padding: 24px; position: relative; overflow: hidden; background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: 12px; text-align: left;">
+              <span class="phase-duration" style="float: right; font-size: 11px; background: rgba(11, 76, 140, 0.15); color: #82b1ff; padding: 4px 10px; border-radius: 20px; font-weight: 600; text-transform: uppercase;">Semana 6</span>
+              <h3 style="font-size: 18px; margin-bottom: 12px; color: #fff; font-family: var(--font-title);"><i class="fas fa-shield-halved" style="color:var(--color-primary); margin-right: 8px;"></i> Fase 4: Roles, Seguridad Activa & Lanzamiento</h3>
+              <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
+                Implementación de permisos diferenciados de personal, fortificación del servidor, SEO básico y entrega final.
+              </p>
+              <h5 style="color: var(--color-primary); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Tareas Principales:</h5>
+              <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 12px; color: var(--text-secondary);">
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Restricción de accesos por roles en panel de administración</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Configuración DNS Cloudflare (HTTPS, WAF y Caché)</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Instalación de Wordfence y respaldos automatizados</li>
+                <li><i class="fas fa-check-circle" style="color:var(--color-primary); margin-right:6px;"></i> Entrega de credenciales, documentación y capacitación</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Scale Section -->
+          <div style="background: rgba(11, 76, 140, 0.05); border: 1px dashed rgba(11, 76, 140, 0.3); border-radius: 12px; padding: 24px; text-align: left; margin-top: 20px; display: flex; gap: 20px; align-items: flex-start;">
+            <div style="background: rgba(11, 76, 140, 0.1); border-radius: 50%; width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-size: 22px;">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 15px; color: #fff; margin-bottom: 6px; font-family: var(--font-title);">Diseñado para el Crecimiento (+10.000 Clientes)</h4>
+              <p style="font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0;">
+                El sistema base de WordPress y base de datos MySQL/MariaDB cuenta con indexación optimizada en columnas de búsqueda rápidas (RUT, Email y Código de Cotización) asegurando tiempos de respuesta menores a 5ms. El panel administrativo incluye paginación dinámica del lado del servidor para evitar lentitud en el navegador, y permite la integración bidireccional mediante API REST con el ERP corporativo de Jürgen SpA (SAP, Defontana, etc.) para centralizar la facturación y el inventario.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== SIDE DRAWER SHOPPING CART ==================== -->
+  <div id="drawerBackdrop" class="drawer-backdrop"></div>
+
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3 style="font-size: 18px;"><i class="fas fa-shopping-cart"></i> Carro de Compra</h3>
+      <button class="cart-close-btn" onclick="toggleCartDrawer()"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- Cart Items list container -->
+    <div id="cartItems" class="cart-items">
+      <div class="cart-empty-state">
+        <i class="fas fa-shopping-bag cart-empty-icon"></i>
+        <p>Tu carro está vacío</p>
+      </div>
+    </div>
+
+    <!-- Cart calculation footer breakdown -->
+    <div class="cart-footer">
+      <div class="cart-summary-line">
+        <span>Subtotal Neto Afecto:</span>
+        <span id="cartNetoAfecto">$0 CLP</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Subtotal Neto Exento:</span>
+        <span id="cartNetoExento">$0 CLP</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>IVA (19% sobre Afecto):</span>
+        <span id="cartIva">$0 CLP</span>
+      </div>
+      <div class="cart-summary-line total">
+        <span>Total General:</span>
+        <span id="cartTotal">$0 CLP</span>
+      </div>
+
+      <button class="btn btn-primary cart-checkout-btn" onclick="checkoutMock()">
+        <i class="fas fa-credit-card"></i> Pagar con Webpay Plus
+      </button>
+    </div>
+  </div>
+
+  <!-- WEBPAY PAYMENT GATEWAY MODAL SIMULATOR -->
+  <div id="webpayModal" class="webpay-modal-overlay" style="display: none;">
+    <div class="webpay-modal-box">
+      <!-- Webpay Header -->
+      <div class="webpay-header">
+        <div class="webpay-logo">
+          <span style="color:#e00613; font-weight:900; font-family:sans-serif;">webpay</span><span
+            style="color:#ffffff; font-weight:700; font-family:sans-serif;">plus</span>
+        </div>
+        <div class="webpay-merchant">
+          <span style="display:block; font-size:10px; color:#aaa; text-transform:uppercase;">Comercio</span>
+          <span style="font-weight:700; font-size:12px; color:#fff;">Jürgen Von Arnim SpA</span>
+        </div>
+      </div>
+
+      <div class="webpay-body">
+        <!-- Order Info -->
+        <div class="webpay-order-summary">
+          <div>
+            <span style="display:block; font-size:11px; color:var(--text-muted);">Monto de la Compra</span>
+            <span id="webpayAmount" class="webpay-price-text">$0 CLP</span>
+          </div>
+          <div style="text-align:right;">
+            <span style="display:block; font-size:11px; color:var(--text-muted);">Orden de Compra</span>
+            <span id="webpayOrderId" style="font-family:monospace; font-weight:600; color:#fff;">OC-98341</span>
+          </div>
+        </div>
+
+        <!-- Tabs for Card vs Debit vs OnePay -->
+        <div class="webpay-tabs" style="margin-bottom:12px;">
+          <button id="btnWebpayTabCard" class="webpay-tab-btn active" onclick="switchWebpayTab('card')">
+            <i class="fas fa-credit-card"></i> Tarjeta Crédito/Débito
+          </button>
+          <button id="btnWebpayTabBank" class="webpay-tab-btn" onclick="switchWebpayTab('bank')">
+            <i class="fas fa-university"></i> Transferencia Redcompra
+          </button>
+        </div>
+
+        <!-- Card Payment Form -->
+        <div id="webpayFormCard" class="webpay-tab-content active">
+          <div class="form-group">
+            <label class="form-label" style="font-size:11px;">Número de Tarjeta</label>
+            <input type="text" class="form-input" placeholder="XXXX XXXX XXXX XXXX"
+              style="background:#151e2e; font-family:monospace;" id="webpayCardNum" value="4559 8743 2190 5432">
+          </div>
+          <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div class="form-group">
+              <label class="form-label" style="font-size:11px;">Vencimiento</label>
+              <input type="text" class="form-input" placeholder="MM/AA" style="background:#151e2e;" id="webpayCardExp"
+                value="12/29">
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="font-size:11px;">CVV</label>
+              <input type="password" class="form-input" placeholder="XXX" style="background:#151e2e;" id="webpayCardCvv"
+                value="123">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bank Transfer Selection -->
+        <div id="webpayFormBank" class="webpay-tab-content" style="display:none;">
+          <div class="form-group">
+            <label class="form-label" style="font-size:11px;">Seleccione su Banco</label>
+            <select class="form-input" style="background:#151e2e; height:44px;" id="webpayBankSelect">
+              <option value="bchile">Banco de Chile / Edwards</option>
+              <option value="estado" selected>Banco Estado (CuentaRUT)</option>
+              <option value="santander">Banco Santander</option>
+              <option value="bci">BCI</option>
+              <option value="itau">Banco Itaú</option>
+              <option value="scotiabank">Scotiabank</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Processing State (Loading) -->
+        <div id="webpayProcessing" class="webpay-processing-state" style="display:none;">
+          <div class="webpay-spinner"></div>
+          <p id="webpayStatusText" style="font-size:13px; color:#fff; font-weight:600; margin-top:16px;">Conectando con
+            Transbank...</p>
+        </div>
+
+        <!-- Success State -->
+        <div id="webpaySuccess" class="webpay-success-state" style="display:none;">
+          <i class="fas fa-check-circle" style="color:var(--text-success); font-size:48px; margin-bottom:16px;"></i>
+          <h4 style="color:#fff; font-size:18px; margin-bottom:8px;">Transacción Exitosa</h4>
+          <p style="font-size:12px; color:var(--text-secondary); margin-bottom:16px;">El pago se ha procesado
+            correctamente.</p>
+          <div
+            style="background:#151e2e; padding:12px; border-radius:6px; font-size:11px; text-align:left; display:flex; flex-direction:column; gap:6px; font-family:monospace; color:#fff; margin-bottom:20px; width:100%; border: 1px solid var(--border-color);">
+            <div>CÓD. AUTORIZACIÓN: <span id="webpayAuthCode">592813</span></div>
+            <div>FECHA: <span id="webpayDate">2026-07-15 09:54</span></div>
+            <div>ORDEN DE COMPRA: <span id="webpaySuccessOrderId">OC-98341</span></div>
+            <div>COMERCIO: Jürgen Von Arnim SpA</div>
+          </div>
+          <button class="btn btn-primary" style="width:100%; color:#000; font-weight:700;"
+            onclick="closeWebpaySuccess()">Volver al Sitio</button>
+        </div>
+      </div>
+
+      <!-- Footer Actions -->
+      <div id="webpayFooterActions" class="webpay-footer">
+        <button class="btn btn-secondary" onclick="closeWebpayModal()"
+          style="padding:10px 18px; font-size:12px;">Cancelar</button>
+        <button class="btn btn-primary" id="btnWebpayPay" onclick="processWebpayPayment()"
+          style="background:#e00613; border-color:#e00613; color:#fff; font-weight:700; padding:10px 24px; font-size:12px;">Pagar
+          con Webpay</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUOTE TECHNICAL REVIEW MODAL FOR ENGINEERS -->
+  <div id="quoteDetailModal" class="webpay-modal-overlay" style="display: none;">
+    <div class="webpay-modal-box" style="width: 600px; max-width: 95%;">
+      <!-- Header -->
+      <div class="webpay-header" style="background:#17223b; border-bottom: 2px solid var(--color-primary); display:flex; justify-content:space-between; align-items:center;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <i class="fas fa-file-invoice" style="color:var(--color-primary); font-size:20px;"></i>
+          <span style="font-weight:700; color:#fff; font-size:16px;">Revisión de Cotización</span>
+        </div>
+        <div>
+          <span id="modalQuoteId" style="font-family:monospace; font-weight:700; font-size:14px; background:rgba(255, 205, 0, 0.1); color:var(--color-primary); padding:4px 8px; border-radius:4px;">COT-2026-001</span>
+        </div>
+      </div>
+      
+      <div class="webpay-body" style="padding: 20px; overflow-y: auto; max-height: 70vh;">
+        <!-- Client Details -->
+        <div style="background:#17223b; border-radius:8px; padding:16px; border:1px solid var(--border-color); display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:12px; margin-bottom:16px; text-align:left;">
+          <div>
+            <span style="color:var(--text-muted); display:block; margin-bottom:2px;">Cliente / Empresa</span>
+            <strong id="modalClientName" style="color:#fff; font-size:13px;">Codelco</strong>
+          </div>
+          <div>
+            <span style="color:var(--text-muted); display:block; margin-bottom:2px;">Contacto</span>
+            <span id="modalClientEmail" style="display:block; color:#fff;">proyectos@codelco.cl</span>
+            <span id="modalClientPhone" style="color:var(--text-muted);">+56 9 8765 4321</span>
+          </div>
+          <div>
+            <span style="color:var(--text-muted); display:block; margin-bottom:2px;">Especialidad / Fecha</span>
+            <span id="modalSpecialty" class="status-badge" style="background:rgba(0,122,204,0.1); color:#82b1ff; font-size:10px; margin-top:2px; display:inline-block;">MECANICA</span>
+            <span id="modalDate" style="color:var(--text-muted); margin-left:8px;">2026-07-10</span>
+          </div>
+          <div>
+            <span style="color:var(--text-muted); display:block; margin-bottom:2px;">Estado Actual</span>
+            <span id="modalStatus" class="status-badge">Pendiente</span>
+          </div>
+        </div>
+        
+        <!-- Requirement Text -->
+        <div style="margin-bottom:20px; text-align:left;">
+          <h4 style="font-size:13px; color:#fff; margin-bottom:8px; border-bottom:1px solid var(--border-color); padding-bottom:6px;">Descripción del Requerimiento</h4>
+          <p id="modalDescription" style="font-size:12px; color:var(--text-secondary); line-height:1.5; background:#151e2e; padding:12px; border-radius:6px; border:1px solid var(--border-color); margin:0;"></p>
+        </div>
+        
+        <!-- Files attached list -->
+        <div style="margin-bottom:20px; text-align:left;">
+          <h4 style="font-size:13px; color:#fff; margin-bottom:8px; border-bottom:1px solid var(--border-color); padding-bottom:6px;">Planos y Archivos en Google Drive (API)</h4>
+          <div id="modalFilesList" style="display:flex; flex-direction:column; gap:8px;">
+            <!-- Rendered by js -->
+          </div>
+        </div>
+
+        <!-- Dynamic Action Form -->
+        <div id="modalReviewActionForm" style="border-top: 1px solid var(--border-color); padding-top:20px; text-align:left;">
+          <h4 style="font-size:13px; color:var(--color-primary); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em; font-family:var(--font-title);">Panel de Respuesta Técnica</h4>
+          
+          <!-- Comments -->
+          <div class="form-group" style="margin-bottom:12px;">
+            <label class="form-label" style="font-size:11px;">Observaciones Técnicas / Comentarios para el Cliente</label>
+            <textarea id="modalComments" class="form-input" style="height:80px; font-size:12px; background:#151e2e; resize:none;" placeholder="Escribe observaciones de diseño, recomendaciones de fatiga o justificación del presupuesto..."></textarea>
+          </div>
+          
+          <!-- Price & File -->
+          <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+            <div class="form-group">
+              <label class="form-label" style="font-size:11px;">Presupuesto Estimado (CLP Neto)</label>
+              <input type="number" id="modalPrice" class="form-input" style="background:#151e2e;" placeholder="Ej: 4500000">
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="font-size:11px;">Subir Cotización Formal (PDF)</label>
+              <div style="display:flex; gap:8px; align-items:center; height:44px;">
+                <input type="file" id="modalQuoteFileInput" style="display:none;" onchange="handleModalFileChange()">
+                <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalQuoteFileInput').click()" style="padding:10px; font-size:12px; flex-grow:1;"><i class="fas fa-file-upload"></i> Seleccionar</button>
+                <span id="modalFileNameLabel" style="font-size:10px; color:var(--text-muted); max-width:100px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Ninguno</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Processing loader -->
+        <div id="modalReviewProcessing" class="webpay-processing-state" style="display:none; padding: 20px 0;">
+          <div class="webpay-spinner"></div>
+          <p id="modalReviewStatusText" style="font-size:13px; color:#fff; font-weight:600; margin-top:16px;">Procesando y notificando al cliente...</p>
+        </div>
+      </div>
+      
+      <!-- Footer actions -->
+      <div id="modalReviewFooter" class="webpay-footer" style="display:flex; justify-content:space-between; align-items:center;">
+        <button class="btn btn-secondary" onclick="closeQuoteDetailModal()" style="padding:10px 18px; font-size:12px;">Cerrar</button>
+        <div style="display:flex; gap:8px;">
+          <button class="btn btn-secondary" onclick="processQuoteReviewSubmit('review')" style="padding:10px 18px; font-size:12px; color:var(--text-danger); border-color:rgba(239,83,80,0.25);">Solicitar Cambios</button>
+          <button class="btn btn-primary" onclick="processQuoteReviewSubmit('approved')" style="padding:10px 24px; font-size:12px; color:#000; font-weight:700;">Aprobar & Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-wrapper">
+      <div>
+        <p>&copy; 2026 Jürgen Von Arnim SpA. Portal de Propuesta Desarrollado por <strong>KVRVA Software
+            Studio</strong>.</p>
+        <p style="font-size: 11px; margin-top: 4px; color: var(--text-muted);">
+          Operado legalmente por Viewled Chile SpA · RUT 78.353.432-0<br>
+          Este sitio es una maqueta de fidelidad interactiva y demo de concepto técnico para validación del cliente.
+        </p>
+      </div>
+
+      <div class="footer-sec">
+        <span><i class="fas fa-shield-alt" style="color:var(--text-success)"></i> SSL Encrypted</span>
+        <span><i class="fas fa-cloud-arrow-up" style="color:var(--color-primary)"></i> Weekly Backups OK</span>
+        <a href="#admin-panel">Administración</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT BINDINGS -->
+  <script src="js/products.js?v=2"></script>
+  <script src="js/quotes.js?v=2"></script>
+  <script src="js/admin.js?v=2"></script>
+  <script src="js/app.js?v=2"></script>
+</body>
+
+</html>
